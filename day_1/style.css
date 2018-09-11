@@ -1,0 +1,53 @@
+html {
+  font-size: 10px;
+  background: url(https://i.imgur.com/wvLXaB6.jpg) bottom center;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'LKosugi Maru', sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;  /* Let all the flexible items be the same length, regardless of its content */
+  min-height: 100vh;  /* Viewport height for full screen div */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;  /* Multi-lines */
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 0.8rem;
+  font-size: 1.5rem;
+  padding: .5rem .5rem;
+  transition: .1s;  /* Don't put this in .playing, will still need this when removing the .playing class */
+  width: 5rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.3);
+  text-shadow: 0 0 .5rem black;  /* Horizontal offset, vertical offset, blur of the shadow, color */
+}
+
+.playing {
+  transform: scale(1.15);
+  border-color: #9999ff;
+  box-shadow: 0 0 1rem #4b4b86;  /* Horizontal offset, vertical offset, blur of the shadow, color */
+}
+
+kbd {
+  font-family: 'Kosugi Maru', sans-serif;
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #9999ff;
+}

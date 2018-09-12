@@ -22,11 +22,11 @@ body {
   height: 100vh;
 }
 .area:first-of-type {
-  background: #3366ff url("img/London_City_1280x1350px.jpg") top left;
+  background: #3366ff url(https://i.imgur.com/PP9x5MJ.jpg) top left;
   background-size: cover;
 }
 .area:last-of-type {
-  background: #9966ff url("img/Taipei_City_1280x1350px.jpg") top right;
+  background: #9966ff url(https://i.imgur.com/2I984Cb.jpg) top right;
   background-size: cover;
 }
 .area-name {
@@ -99,6 +99,7 @@ body {
     width: 10rem;
     height: 10rem;
     border: 0.3rem solid rgba(0, 0, 0, 0.7);
+    margin: 2rem auto;
   }
 
   .hand {

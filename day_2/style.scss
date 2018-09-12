@@ -80,6 +80,12 @@ body {
 
 .second-hand {
   background-color: #0000ff;
+  height: .25rem;
+}
+
+.hour-hand {
+  width: 35%;
+  right: 50%;
 }
 
 @media screen and (max-width: 800px) {
@@ -105,5 +111,8 @@ body {
   }
   .hand {
     height: .3rem;
+  }
+  .second-hand {
+    height: .15rem;
   }
 }

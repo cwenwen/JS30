@@ -1,0 +1,86 @@
+:root {
+  --frame-color: #ffc600;
+  --frame: 20px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--frame);
+  background: var(--frame-color);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--frame-color);
+}
+
+/* misc styles, nothing to do with CSS variables */
+
+html {
+  height: 100%;
+  font-size: 45px;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://i.imgur.com/wzxpics.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+}
+
+.title {
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 2rem;
+}
+
+#frame-color {
+  width: 1rem;
+}
+
+img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.controls {
+  margin: auto 1rem;
+}
+
+.img {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .controls {
+    margin: auto auto 1rem auto;
+  }
+
+  .img {
+    margin: auto auto 1rem auto;
+  }
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
